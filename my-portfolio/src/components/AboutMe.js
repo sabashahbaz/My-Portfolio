@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import {Skills} from './Skills'
 import me from '../assets/img/myPic.jpg'
-import whoAmI from '../assets/img/whoAmI.png'
+import whoAmI from '../assets/font/whoAmI.png'
+import technicalSkills from '../assets/font/technicalskills.png'
+
 import CSS from '../AboutMe.css'
 
 export const AboutMe = () => {
@@ -16,34 +19,10 @@ export const AboutMe = () => {
                 </div>
                 </div>
             </div>
-            <Container className="skills-container">
-                    <Row>
-                        <Col>
-                        <div className="skill-bx">
-                            <h2>Skills</h2>
-                            <p>dummy text</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <h2>Skills</h2>
-                            <p>dummy text</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <h2>Skills</h2>
-                            <p>dummy text</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <h2>Skills</h2>
-                            <p>dummy text</p>
-                        </div>
-                        </Col>
-                    </Row>
-                </Container>
+            <div className="technical-skills">
+                <img className="technical-skills-image" src = {technicalSkills}/> 
+            </div>
+            <Skills/>
             <div>
         </div>
     </div>

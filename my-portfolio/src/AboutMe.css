@@ -4,11 +4,12 @@
     position: relative; 
     background-image: url('./assets/img/bk.png'); 
     background-attachment: fixed;
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 .content-container {
     display: flex;
+    margin-top: -30px;
 }
 
 .my-pic{
@@ -16,7 +17,7 @@
     width: 25%;
     height: 400px;
     margin-top: 80px;
-    margin-left: 76px;
+    margin-left: 80px;
     border: .5rem solid rgba(0, 0, 0, 0.699);
 }
 
@@ -27,9 +28,9 @@
 }
 
 .who-am-I{
-    width: 50%;
+    width: 60%;
     margin-left: 300px;
-    margin-top: 40px;
+    margin-top: -150px ;
 }
 
 .about-text{
@@ -37,7 +38,7 @@
     color: whitesmoke;
     text-align: center;
     margin-left: 200px;
-    margin-top: 30px;
+    margin-top: -250px;
     background-color: rgba(166, 129, 211, 0.839);
     border-radius: 20px;
     padding: 10px;
@@ -49,4 +50,101 @@
     margin-top: 10px;
     font-size: 25px;
 
+}
+
+.technical-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technical-skills-image{
+    width: 50%;
+    margin-top: -180px;
+    margin-bottom: -270px;
+}
+
+.front-header{
+    color: rgb(241, 243, 246);
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -20px;
+    text-shadow: 0 0 10px #ae00ff, 0 0 10px #0000FF;
+}
+
+.skills-container{
+ display: flex; 
+  /* flex-direction: row; */
+  gap: 100px; 
+  width: 1200px;
+  height: 400px;
+  /* margin-left: 107px; */
+  align-items: center;
+  justify-content: center;
+
+
+} 
+
+.skill-bx{
+    width: 90px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: inline; 
+
+}
+
+.skills-header{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 480px;
+    /* text-align: center;
+    align-items: center; */
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.tools-header{
+    color: rgb(241, 243, 246);
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: -20px;
+    text-shadow: 0 0 10px #ae00ff, 0 0 10px #0000FF;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.tool-bx{
+    height: 40px;
+    display: inline; 
+}
+
+.tool-icon{
+    height: 150px;
+}
+
+.skills-center {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.me{
+    height: 500px;
+    width: 500px;
+   
+}
+
+.soft-skills{
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex;
+}
+
+.soft-skills-text{
+    color: whitesmoke;
+    text-shadow: 0 0 5px #ae00ff, 0 0 5px #753fb8;
+    font-weight: bold;
+    font-size: 40px;
 }
