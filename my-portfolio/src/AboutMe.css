@@ -1,0 +1,52 @@
+.bg{
+    padding: 120px 0;
+  /* z-index: -1; */
+    position: relative; 
+    background-image: url('./assets/img/bk.png'); 
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+.content-container {
+    display: flex;
+}
+
+.my-pic{
+    border-radius: 50%;
+    width: 25%;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 76px;
+    border: .5rem solid rgba(0, 0, 0, 0.699);
+}
+
+.header{
+    color: whitesmoke;
+    margin-top: 70px;
+    margin-left: 350px;
+}
+
+.who-am-I{
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.about-text{
+    width: 73%;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 30px;
+    background-color: rgba(166, 129, 211, 0.839);
+    border-radius: 20px;
+    padding: 10px;
+    border: .5rem solid rgb(127, 65, 228);
+}
+
+.p{
+    line-height: 1.4;
+    margin-top: 10px;
+    font-size: 25px;
+
+}
