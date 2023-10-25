@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-elastic-carousel": "^0.11.5",
+    "react-multi-carousel": "^2.8.4"
+  }
+}
