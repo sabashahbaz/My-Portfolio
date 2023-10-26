@@ -350,9 +350,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  color: rgb(241, 243, 246);
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 0 0 10px #ae00ff, 0 0 10px #0000FF;
 } 
 .project p {
-  color: #B8B8B8;
+  /* color: #B8B8B8; */
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -360,6 +364,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 } 
+
+.projects-p{
+  color: whitesmoke;
+}
+
 
 .resume {
   /* position: absolute; */
