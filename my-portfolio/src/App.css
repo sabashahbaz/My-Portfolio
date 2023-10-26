@@ -368,15 +368,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .projects-p{
   color: whitesmoke;
 }
-
-
-.resume {
-  /* position: absolute; */
-  /* position: relative; */
-  margin-top: 100px;
-  margin-left: 70px;
-  width: 500px;
-  height: 700px;
-  align-items: center;
-  justify-content: center;
-}
