@@ -6,6 +6,7 @@ import {Banner} from './components/Banner';
 import {Projects} from './components/Projects';
 import {AboutMe} from './components/AboutMe'
 import {Resume} from './components/Resume'
+import {Contact} from './components/Contact'
 import {Footer} from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,6 +20,8 @@ function App() {
             <Route path="projects" element={<Projects />}/>
             <Route path="about-me" element={<AboutMe />}/>
             <Route path="resume" element={<Resume />}/>
+            <Route path="contact" element={<Contact />}/>
+
           </Routes>
       </BrowserRouter>
     </div>

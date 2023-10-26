@@ -2,6 +2,9 @@ import {useState, useEffect} from "react";
 import {Container, Row, Col} from "react-bootstrap"
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/img/me-banner.png"
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/icons8-github.svg';
+import navIcon3 from '../assets/img/icons8-email-100.png';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -54,6 +57,11 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`I'm a `}<span className="wrap">{text}</span></h1>
                 {/* <p>Come get to know me</p> */}
+                {/* <div className="social-icons">
+                    <a href="https://www.linkedin.com/in/saba-shahbaz/" target="_blank"><img src={navIcon1} alt="linked in" /></a>
+                    <a href="https://github.com/sabashahbaz"  target="_blank"><img src={navIcon2} alt="github"  /></a>
+                    <a href="mailto:sabashahbaz001@gmail.com"><img src={navIcon3} alt="" /></a>
+                </div> */}
             </Col>
             <Col xs={12} md={6} xl={6}>
                 <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />
