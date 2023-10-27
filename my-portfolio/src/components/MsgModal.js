@@ -21,5 +21,3 @@ function MsgModal({show, onHide}) {
 
 export default MsgModal;
 
-// show={show} onHide={handleClose}
-// show={show} onHide={handleClose}
