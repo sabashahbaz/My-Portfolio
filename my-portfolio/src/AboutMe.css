@@ -20,7 +20,7 @@
     border-radius: 50%;
     width: 25%;
     height: 400px;
-    margin-top: 80px;
+    margin-top: 150px;
     margin-left: 80px;
     border: .5rem solid rgba(0, 0, 0, 0.699);
 }
@@ -38,7 +38,7 @@
 }
 
 .about-text{
-    width: 73%;
+    width: 74%;
     color: whitesmoke;
     text-align: center;
     margin-left: 200px;
@@ -336,3 +336,4 @@
     color: white;
     font-weight: bold ;
 }
+

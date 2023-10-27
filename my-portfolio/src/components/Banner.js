@@ -47,21 +47,9 @@ export const Banner = () => {
         <section className="banner" id="home">
     <Container>
         <Row className="align-items-center">
-        {/* <Col xs={12} md={6} xl={6}>
-                <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />
-            </Col> */}
-            {/* <Col xs={12} md={6} xl={6}>
-                <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />
-            </Col> */}
             <Col xs={12} md={6} xl={6} className="welcome-page-text">
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`I'm a `}<span className="wrap">{text}</span></h1>
-                {/* <p>Come get to know me</p> */}
-                {/* <div className="social-icons">
-                    <a href="https://www.linkedin.com/in/saba-shahbaz/" target="_blank"><img src={navIcon1} alt="linked in" /></a>
-                    <a href="https://github.com/sabashahbaz"  target="_blank"><img src={navIcon2} alt="github"  /></a>
-                    <a href="mailto:sabashahbaz001@gmail.com"><img src={navIcon3} alt="" /></a>
-                </div> */}
             </Col>
             <Col xs={12} md={6} xl={6}>
                 <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />

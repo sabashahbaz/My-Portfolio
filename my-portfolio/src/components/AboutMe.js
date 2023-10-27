@@ -17,7 +17,7 @@ export const AboutMe = () => {
                 <div className="text-container">
                 <img className="who-am-I" src={whoAmI}/>
                 <div className="about-text">
-                    <p className="p">A passionate software engineer eager to begin her journey into the tech industry. I have recently graduated from Flatiron’s School Full-Stack Software Engineering bootcamp where I learned basic computer science and programming languages concepts. I am excited to join cross-functional teams to collaborate on projects to meet business needs.</p>
+                    <p className="p">Hello, my name is Saba Shahbaz and I am very excited for you to check out my portfolio. I am a passionate software engineer who is excited to be a part of a collaborative team to work on designing and developing projects in order to meet business needs. I  have a strong foundation in building projects with JavaScript and Python, and can’t to show you my skills. Please feel free to explore my portfolio and get to know more about me !</p>
                 </div>
                 </div>
             </div>
