@@ -6,7 +6,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/icons8-github.svg';
 import navIcon3 from '../assets/img/icons8-email-100.png';
 
-export const Banner = () => {
+export const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ["Software Engineer","Product Designer", "Web Developer", "UI/UX Designer"]

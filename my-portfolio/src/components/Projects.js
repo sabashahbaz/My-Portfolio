@@ -4,7 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png"
 import thrifty from '../assets/img/thrifty.gif'
 import tastytracker from '../assets/img/tasty-tracker-demo.gif'
 import magicalduel from '../assets/img/magical_duel.gif'
-import '../projectcard.css';
+import '../CSS/projectcard.css';
 
 
 export const Projects = () => {

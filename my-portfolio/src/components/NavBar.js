@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
-import {Banner} from './Banner';
+import {Home} from './Home';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/icons8-github.svg';
 import navIcon3 from '../assets/img/icons8-email-100.png';

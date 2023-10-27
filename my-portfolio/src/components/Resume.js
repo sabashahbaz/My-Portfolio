@@ -2,7 +2,7 @@ import React from 'react';
 import resume from '../assets/resume.pdf'
 import my_resume from '../assets/my-resume.png'
 import download from '../assets/download.png'
-import CSS from '../Resume.css'
+import CSS from '../CSS/Resume.css'
 
 export const Resume = () => {
     return(

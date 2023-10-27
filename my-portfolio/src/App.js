@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import './App.css';
+import './CSS/App.css';
 import {NavBar} from './components/NavBar';
-import {Banner} from './components/Banner';
+import {Home} from './components/Home';
 import {Projects} from './components/Projects';
 import {AboutMe} from './components/AboutMe'
 import {Resume} from './components/Resume'
@@ -16,7 +16,7 @@ function App() {
       <NavBar/>
       <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Banner/>}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="projects" element={<Projects />}/>
             <Route path="about-me" element={<AboutMe />}/>
             <Route path="resume" element={<Resume />}/>

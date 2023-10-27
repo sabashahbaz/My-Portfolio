@@ -1,19 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import MsgModal from './MsgModal';
 import emailjs from '@emailjs/browser';
 import linkedin from '../assets/img/linkedinlogo.png'
 import github from '../assets/img/githublogo.png'
 import gmail from '../assets/img/gmaillogo.png'
-import CSS from '../Contact.css';
+import CSS from '../CSS/Contact.css';
 
     export const Contact = () => {
     const form = useRef();
+    const [show, setShow] = useState(false);
+
+    const serviceKey = process.env.REACT_APP_PUBLIC_KEY;
+    const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
+    const id = process.env.REACT_APP_ID;
+
+
+    function showModal() {
+        
+      }
+
+      function hideModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_6y67209', 'template_clxrh2p', form.current, 'UcuinW0n9Yv21zunR')
+        emailjs.sendForm(serviceKey, templateKey, form.current, id)
         .then((result) => {
             console.log(result.text);
+            setShow(true)
         }, (error) => {
             console.log(error.text);
         });
@@ -61,6 +78,7 @@ import CSS from '../Contact.css';
                 </div>
             </div>
             </div>
+            <MsgModal show={show} onHide={() => setShow(false)} /> 
         </div>
     );
     };

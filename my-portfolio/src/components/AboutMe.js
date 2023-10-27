@@ -7,7 +7,7 @@ import whoAmI from '../assets/font/whoAmI.png'
 import technicalSkills from '../assets/font/technicalskills.png'
 import bing from '../assets/bing-pic.png'
 import flatiron from '../assets/flatiron.png'
-import CSS from '../AboutMe.css'
+import CSS from '../CSS/AboutMe.css'
 
 export const AboutMe = () => {
     return (

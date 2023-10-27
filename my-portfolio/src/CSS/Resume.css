@@ -31,7 +31,7 @@
 
 .text-bg{
     position: relative; 
-    background-image: url('./assets/img/bk.png'); 
+    background-image: url('../assets/img/bk.png'); 
     margin-top: 0;
     padding: 150px 0 100px 0;
     background-position: top center;
