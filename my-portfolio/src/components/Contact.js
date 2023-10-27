@@ -1,102 +1,84 @@
-import {useState} from "react";
-import {Container} from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg"
+import React, { useRef, useState } from 'react';
+import MsgModal from './MsgModal';
+import emailjs from '@emailjs/browser';
+import linkedin from '../assets/img/linkedinlogo.png'
+import github from '../assets/img/githublogo.png'
+import gmail from '../assets/img/gmaillogo.png'
+import CSS from '../CSS/Contact.css';
 
-export const Contact = () => {
-    const formInitialDetails = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-    }
+    export const Contact = () => {
+    const form = useRef();
+    const [show, setShow] = useState(false);
 
-    const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtonText] = useState('Send');
-    const [status, setStatus] = useState({});
+    const serviceKey = process.env.REACT_APP_PUBLIC_KEY;
+    const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
+    const id = process.env.REACT_APP_ID;
 
-    const onFormUpdate = (category, value) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value
-        })
-    }
 
-    const handleSubmit = async (e) => {
+    function showModal() {
+        
+      }
+
+      function hideModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        setButtonText('Sending...');
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "Application/json;charset=utf-8",
-            },
-            body: JSON.stringify(formDetails),
+
+        emailjs.sendForm(serviceKey, templateKey, form.current, id)
+        .then((result) => {
+            console.log(result.text);
+            setShow(true)
+        }, (error) => {
+            console.log(error.text);
         });
-        setButtonText("Send");
-        let result = response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code === 200) {
-            setStatus({success: true, message: 'Message sent successfully'});
-    } else {
-        setStatus({ success: false, message: 'Something went wrong, please try again'})
-    }
+    };
 
     return (
-        <section className="contact" id="connect">
-            <Container>
-                <Row className="align-items-center">
-                    <Col md={6}>
-                        <img src={contactImg} alt="Contact Us" />
-                    </Col>
-                    <Col md={6}>
-                        <h2>Get In Touch</h2>
-                        <form onSubit={handleSubmit}>
-                            <Row>
-                                <Col sm={6} className="px-1">
-                                    <input 
-                                    type="text"
-                                    value={formDetails.firstName} 
-                                    placeholder="First Name" 
-                                    onChange={(e) => onFormUpdate('firstname', e.target.value)}/>
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input 
-                                    type="text"
-                                    value={formDetails.firstName} 
-                                    placeholder="Last Name" 
-                                    onChange={(e) => onFormUpdate('lastname', e.target.value)}/>
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input 
-                                    type="email"
-                                    value={formDetails.email} 
-                                    placeholder="Email Address" 
-                                    onChange={(e) => onFormUpdate('email', e.target.value)}/>
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input 
-                                    type="tel"
-                                    value={formDetails.tel} 
-                                    placeholder="Phone Number" 
-                                    onChange={(e) => onFormUpdate('phone', e.target.value)}/>
-                                </Col>
-                                <Col>
-                                    <textarea row="6"
-                                    value={formDetails.message}
-                                    placeholder="Message"
-                                    onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                                    <button type="submit"><span>{buttonText}</span></button>
-                                </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                    <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                                    </Col>
-                                }
-                            </Row>
-                        </form>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    )};
+        <div className="contact-bg">
+            <div className="form-container">
+            <h2 className="header-msg">Send a message</h2>
+                <form className="form"ref={form} onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input type="text" name="user_name" />
+
+                    <label>Email</label>
+                    <input type="email" name="user_email" />
+
+                    <label>Message</label>
+                    <textarea name="message" />
+                    <input type="submit" value="Send" />
+                    </form>`
+            </div>
+            <div className= "connect-container">
+            <h2 className="connect-msg">Connect with me!</h2>
+            <div className="logos-container">
+                <div className="logos">
+                <div className="logo">
+                    <a href="https://www.linkedin.com/in/saba-shahbaz/" target="_blank">
+                        <img className="logo-img" src={linkedin} alt="linkedin"/>
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+                <div className="logo">
+                    <a href="https://github.com/sabashahbaz"  target="_blank">
+                        <img className="logo-img" src={github} alt="github"/>
+                        <p>Github</p>
+                    </a>
+                    
+                </div>
+                <div className="logo">
+                    <a href="mailto:sabashahbaz001@gmail.com">
+                    <img className="logo-img" src={gmail} alt="email"/>
+                    <p>Email me!</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+            <MsgModal show={show} onHide={() => setShow(false)} /> 
+        </div>
+    );
+    };
