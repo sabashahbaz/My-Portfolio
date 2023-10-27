@@ -31,13 +31,14 @@ import CSS from '../CSS/Contact.css';
             <h2 className="header-msg">Send a message</h2>
                 <form className="form"ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
-                    <input type="text" name="user_name" />
+                    <input type="text" name="user_name" placeholder="your name" />
 
                     <label>Email</label>
-                    <input type="email" name="user_email" />
+                    <input type="email" name="user_email" placeholder="your email"/>
 
                     <label>Message</label>
-                    <textarea name="message" />
+                    <textarea name="message"placeholder="write me a message"/>
+
                     <input type="submit" value="Send" />
                     </form>
             </div>
