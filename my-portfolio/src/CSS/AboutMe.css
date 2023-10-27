@@ -78,11 +78,11 @@
     margin-bottom: -270px;
 }
 
-
+/* hover over skill images and it glows */
 .col:hover {
     box-shadow: 0 0 20px rgba(196, 118, 241, 0.7);
     border-radius: 30px;
-    transform: scale(1.1); /* Apply a 10% scale increase on hover */
+    transform: scale(1.1);
 }
 
 .front-header{
@@ -216,8 +216,8 @@
 
 .books-show-header{
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center;
     gap: 630px;
     color: rgb(241, 243, 246);
     font-weight: bold;
@@ -342,29 +342,7 @@
     font-weight: bold ;
 }
 
-.my-pic:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(circle, #ff0000 10%, transparent 50%);
-    border-radius: 50%;
-    animation: spark 0.5s linear infinite;
-}
-
-@keyframes spark {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(2);
-        opacity: 0;
-    }
-}
-
+/* pulsating my bitmoji */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -380,6 +358,8 @@
 .me {
     animation: pulse 4s infinite;
 }
+
+/* hover over soft skills and they shake */
 
 .soft-skills-text  {
     transition: transform 0.3s ease;

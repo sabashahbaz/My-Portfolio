@@ -71,8 +71,8 @@ input[type="submit"] {
 }
 
 .logo-img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -86,6 +86,8 @@ input[type="submit"] {
     margin-top: 3%;
     text-align: center;
     display: flex;
+    padding: 2px;
+    text-align: center;
 }
 
 .form-container label,
@@ -97,11 +99,16 @@ input[type="submit"] {
 .logo{
     display: flex;
     gap: 30px;
-    height: 80px;
-    font-size: 40px;
+    height: 60px;
+    font-size: 35px;
     font-weight: bold;
     text-shadow: 0 0 10px #ae00ff, 0 0 10px #0000FF;
     color: #fff;
+    text-align: center;
+    padding: 3px;
+    margin-top: 30px;
+    
+
 }
 .logo a {
     display: inherit;
@@ -109,6 +116,10 @@ input[type="submit"] {
     gap: inherit;
     text-decoration: none; 
     color: inherit; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
   }
 
   .header-msg{
@@ -122,12 +133,17 @@ input[type="submit"] {
 
   .connect-msg{
     float: right;
-    margin-right: 200px;
+    /* margin-right: 200px; */
     font-size: 50px;
     font-weight: bold;
     text-shadow: 0 0 10px #6a00ff, 0 0 10px #0000FF;
     color: #fff;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+
 
   }
 
@@ -178,12 +194,9 @@ input[type="submit"] {
     cursor: pointer;
   }
   
-  /* OK Button */
-  #okButton {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+  .logo:hover {
+    box-shadow: 0 0 20px rgba(160, 77, 208, 0.938);
+    border-radius: 30px;
+    transform: scale(1.1); /* Apply a 10% scale increase on hover */
+}
+
