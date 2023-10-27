@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './CSS/App.css';
 import {NavBar} from './components/NavBar';
@@ -7,7 +6,6 @@ import {Projects} from './components/Projects';
 import {AboutMe} from './components/AboutMe'
 import {Resume} from './components/Resume'
 import {Contact} from './components/Contact'
-import {Footer} from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -21,7 +19,6 @@ function App() {
             <Route path="about-me" element={<AboutMe />}/>
             <Route path="resume" element={<Resume />}/>
             <Route path="contact" element={<Contact />}/>
-
           </Routes>
       </BrowserRouter>
     </div>

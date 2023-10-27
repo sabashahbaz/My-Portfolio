@@ -19,22 +19,22 @@ import hobbies from '../assets/font/hobbies.png'
 export const Hobbies = () => {
 
     const bookItems = [
-        <div><img src={twilight}/></div>,
-        <div><img src={breakingTheHabit}/></div>,
-        <div><img src={witches}/></div>,
-        <div><img src={yours}/></div>,
-        <div><img src={gg}/></div>,
-        <div><img src={midnight}/></div>,
-        <div><img src={harryPotter}/></div>,
+        <div><img src={twilight} alt="Twilight" /></div>,
+        <div><img src={breakingTheHabit} alt="Breaking the Habit of Being Yourself" /></div>,
+        <div><img src={witches} alt="The Very Secret Society of Witches" /></div>,
+        <div><img src={yours} alt="Yours Truly" /></div>,
+        <div><img src={gg} alt="Good Girl's Guide to Murder" /></div>,
+        <div><img src={midnight} alt="Midnight Sun" /></div>,
+        <div><img src={harryPotter}  alt="Harry Potter and the Order of Pheonix" /></div>,
     ];
     
     const showItems = [
-        <div><img style={{ height: '400px' }} src={office}/></div>,
-        <div><img src={seinfeld}/></div>,
-        <div><img src={murder}/></div>,
-        <div><img src={nhie}/></div>,
-        <img style={{ height: '400px' }} src={family} alt="Family" />,
-        <div><img style={{ height: '400px' }} src={gossipg}/></div>
+        <div><img style={{ height: '400px' }} src={office} alt="The Office" /></div>,
+        <div><img src={seinfeld} alt="Seinfeld" /></div>,
+        <div><img src={murder} alt="Hoe to get Away With Murder" /></div>,
+        <div><img src={nhie} alt="Never Have I Ever" /></div>,
+        <img style={{ height: '400px' }} src={family} alt="Family Guy" />,
+        <div><img style={{ height: '400px' }} src={gossipg} alt="Gossip Girl" /></div>
     ]
     
         const responsive = {
@@ -54,7 +54,7 @@ export const Hobbies = () => {
     return (
         <div>
             <div className="hobbies-img-container">
-            <img className = "hobbies-title" src={hobbies}/>
+            <img className = "hobbies-title" src={hobbies} alt="Hobbies Text" />
             </div>
             <div className="books-show-header">
                 <h2>favorite reads</h2>

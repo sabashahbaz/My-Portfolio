@@ -25,134 +25,130 @@ export const Skills = () => {
         return (
             <>
             <div className="skills-header">
-            <h1 className="front-header">Front-End</h1>
-            <h1 className="front-header">Back-End</h1>
+                <h1 className="front-header">Front-End</h1>
+                <h1 className="front-header">Back-End</h1>
             </div>
             <div className="skills-center">
-            <div className="skills-container">
-            {/* <h1 className="front-header">Front-End</h1> */}
-            <Container className="front-skills-container">
-                    <Row>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={js} alt="javascript"/>
-                            <p className="skill-name">JavaScript</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <img src={react} alt="React"/>
-                            <p className="skill-name">React</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <img src={tailwind} alt="tailwind"/>
-                            <p className="skill-name">Tailwind</p>
-                        </div>
-                        </Col>
-                        </Row>
+                <div className="skills-container">
+                <Container className="front-skills-container">
                         <Row>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={bootstrap} alt="bootstrap"/>
-                            <p className="skill-name">Bootstrap</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={html} alt="html"/>
-                            <p className="skill-name">HTML 5</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={css} alt="css"/>
-                            <p className="skill-name">CSS 3 </p>
-                        </div>
-                        </Col>
-                    </Row>
-                </Container>
-
-                {/* <h1 className="front-header">Back-End</h1> */}
-            <Container className="back-skills-container">
-                    <Row>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={python} alt="python"/>
-                            <p className="skill-name">Python</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <img src={flask} alt="Flask"/>
-                            <p className="skill-name">Flask</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                            <img src={node} alt="node.js"/>
-                            <p className="skill-name">Node.JS</p>
-                        </div>
-                        </Col>
-                        </Row>
+                            <Col>
+                                <div className="skill-bx">
+                                <img src={js} alt="javascript"/>
+                                    <p className="skill-name">JavaScript</p>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div className="skill-bx">
+                                    <img src={react} alt="React"/>
+                                    <p className="skill-name">React</p>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div className="skill-bx">
+                                    <img src={tailwind} alt="tailwind"/>
+                                    <p className="skill-name">Tailwind</p>
+                                </div>
+                            </Col>
+                            </Row>
                         <Row>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={mongodb} alt="mongodb"/>
-                            <p className="skill-name">MongoDB</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={sql} alt="SQL"/>
-                            <p className="skill-name">SQL</p>
-                        </div>
-                        </Col>
-                        <Col>
-                        <div className="skill-bx">
-                        <img src={postgresql} alt="postgresql"/>
-                            <p className="skill-name" >Postgresql</p>
-                        </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-
+                            <Col>
+                                <div className="skill-bx">
+                                <img src={bootstrap} alt="bootstrap"/>
+                                    <p className="skill-name">Bootstrap</p>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div className="skill-bx">
+                                <img src={html} alt="html"/>
+                                    <p className="skill-name">HTML 5</p>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div className="skill-bx">
+                                <img src={css} alt="css"/>
+                                    <p className="skill-name">CSS 3 </p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container className="back-skills-container">
+                            <Row>
+                                <Col>
+                                    <div className="skill-bx">
+                                    <img src={python} alt="python"/>
+                                        <p className="skill-name">Python</p>
+                                    </div>
+                                </Col>
+                                    <Col>
+                                    <div className="skill-bx">
+                                        <img src={flask} alt="Flask"/>
+                                        <p className="skill-name">Flask</p>
+                                    </div>
+                                </Col>
+                                <Col>
+                                <div className="skill-bx">
+                                    <img src={node} alt="node.js"/>
+                                    <p className="skill-name">Node.JS</p>
+                                </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <div className="skill-bx">
+                                    <img src={mongodb} alt="mongodb"/>
+                                        <p className="skill-name">MongoDB</p>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="skill-bx">
+                                    <img src={sql} alt="SQL"/>
+                                        <p className="skill-name">SQL</p>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className="skill-bx">
+                                    <img src={postgresql} alt="postgresql"/>
+                                        <p className="skill-name" >Postgresql</p>
+                                    </div>
+                                </Col>
+                            </Row>
+                    </Container>
+                    </div>
             </div>
             <h1 className="tools-header">Development Tools</h1>
             <Container>
                 <Row>
-                <Col>
+                    <Col>
                         <div className="tool-bx">
                         <img className="tool-icon" src={figma} alt="figma"/>
                             <p className="skill-name">Figma</p>
                         </div>
-                        </Col>
-                        <Col>
+                    </Col>
+                    <Col>
                         <div className="tool-bx">
                         <img className="tool-icon" src={git} alt="git"/>
                             <p className="skill-name">Git</p>
                         </div>
-                        </Col>
-                        <Col>
+                    </Col>
+                    <Col>
                         <div className="tool-bx">
                         <img className="tool-icon" src={json} alt="JWT"/>
                             <p className="skill-name">JSON Web Token</p>
                         </div>
-                        </Col>
-                        <Col>
+                    </Col>
+                    <Col>
                         <div className="tool-bx">
                         <img className="tool-icon" src={vsCode} alt="vsCode"/>
                             <p className="skill-name">Visual Studio Code</p>
                         </div>
-                        </Col>
-                        <Col>
+                    </Col>
+                    <Col>
                         <div className="tool-bx">
                         <img className="tool-icon" src={mac} alt="macOS"/>
                             <p className="skill-name">MacOS</p>
                         </div>
-                        </Col>
+                    </Col>
                 </Row>
             </Container>
             <div className= "ss-img-container">
@@ -164,16 +160,13 @@ export const Skills = () => {
                     <p>detail oriented</p>
                     <p>creative</p>
                 </div>
-               
                 <img className= "me" src={me}/>
                 <div className= "soft-skills-text">
                     <p>ambitious</p>
                     <p>problem-solver</p>
                     <p>critical thinker</p>
                 </div>
-
             </div>
-            
             </> 
         )
     };

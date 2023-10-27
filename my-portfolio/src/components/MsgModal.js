@@ -1,11 +1,9 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function MsgModal({show, onHide}) {
     const handleClose = () => {
-        onHide(); // Close the modal
-        window.location.reload(); // Refresh the page
+        onHide(); 
+        window.location.reload(); 
       };
     
 

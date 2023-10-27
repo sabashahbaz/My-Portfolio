@@ -14,19 +14,8 @@ import CSS from '../CSS/Contact.css';
     const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
     const id = process.env.REACT_APP_ID;
 
-
-    function showModal() {
-        
-      }
-
-      function hideModal() {
-        const modal = document.getElementById("myModal");
-        modal.style.display = "none";
-      }
-
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs.sendForm(serviceKey, templateKey, form.current, id)
         .then((result) => {
             console.log(result.text);
@@ -50,7 +39,7 @@ import CSS from '../CSS/Contact.css';
                     <label>Message</label>
                     <textarea name="message" />
                     <input type="submit" value="Send" />
-                    </form>`
+                    </form>
             </div>
             <div className= "connect-container">
             <h2 className="connect-msg">Connect with me!</h2>
@@ -67,7 +56,6 @@ import CSS from '../CSS/Contact.css';
                         <img className="logo-img" src={github} alt="github"/>
                         <p>Github</p>
                     </a>
-                    
                 </div>
                 <div className="logo">
                     <a href="mailto:sabashahbaz001@gmail.com">
@@ -81,4 +69,4 @@ import CSS from '../CSS/Contact.css';
             <MsgModal show={show} onHide={() => setShow(false)} /> 
         </div>
     );
-    };
+};

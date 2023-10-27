@@ -226,6 +226,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 
+.contact{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(119, 54, 233, 0.866) -5.91%, rgba(221, 120, 31, 0.837) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  color: rgb(245, 242, 248);
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 5px;
+  text-shadow: 0 0 10px #b42ac1, 0 0 10px #470247;
+  /* margin-left: 25%; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 300px;
+}
 .welcome-page-text{
   /* background-color: aqua; */
   width: 600px;

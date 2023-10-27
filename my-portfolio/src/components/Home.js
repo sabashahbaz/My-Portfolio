@@ -1,10 +1,6 @@
 import {useState, useEffect} from "react";
 import {Container, Row, Col} from "react-bootstrap"
-import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/img/me-banner.png"
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/icons8-github.svg';
-import navIcon3 from '../assets/img/icons8-email-100.png';
 
 export const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -45,17 +41,17 @@ export const Home = () => {
 
     return (
         <section className="banner" id="home">
-    <Container>
-        <Row className="align-items-center">
-            <Col xs={12} md={6} xl={6} className="welcome-page-text">
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`I'm a `}<span className="wrap">{text}</span></h1>
-            </Col>
-            <Col xs={12} md={6} xl={6}>
-                <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />
-            </Col>
-        </Row>
-    </Container>
-</section>
-    )
-}
+            <Container>
+                <Row className="align-items-center">
+                    <Col xs={12} md={6} xl={6} className="welcome-page-text">
+                        <span className="tagline">Welcome to my Portfolio</span>
+                        <h1>{`I'm a `}<span className="wrap">{text}</span></h1>
+                    </Col>
+                    <Col xs={12} md={6} xl={6}>
+                        <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+    );
+};
