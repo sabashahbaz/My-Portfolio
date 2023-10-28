@@ -1,0 +1,27 @@
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+  from = "/"
+  to = "/"
+
+[[redirects]]
+  from = "/projects"
+  to = "/projects"
+
+[[redirects]]
+  from = "/about-me"
+  to = "/about-me"
+
+[[redirects]]
+  from = "/resume"
+  to = "/resume"
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact"
