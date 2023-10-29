@@ -22,8 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "CI = npm run build",
+    "start": "rieact-scripts start",
+    "build": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "netlify dev"
