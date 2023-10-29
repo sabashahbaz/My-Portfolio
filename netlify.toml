@@ -1,3 +1,0 @@
-[build]
-  publish = "/My-Portfolio"
-  command = "npm run build"
